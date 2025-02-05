@@ -1,0 +1,9 @@
+aside {
+    background: #555;
+    width: 16%;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
