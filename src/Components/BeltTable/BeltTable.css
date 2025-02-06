@@ -1,0 +1,44 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.belt-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #222;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.belt-table th,
+.belt-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border: 2px solid #000;
+}
+
+.belt-table th {
+    background-color: #28293d;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+.belt-table tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.belt-table tr:nth-child(even) {
+    background-color: #222;
+}
+
+.belt-table tr:hover {
+    background-color: #323348;
+}

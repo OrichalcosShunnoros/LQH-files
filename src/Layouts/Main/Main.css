@@ -7,9 +7,9 @@ main {
     padding: 1rem;
     color: #aaa;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     .content {
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);

@@ -1,14 +1,115 @@
-export const belts = [
-    { name: "Blanco", poomsae: "Taeguk il chang (1° poomsae)", img: "/images/white-belt.jpg" },
-    { name: "Amarillo", poomsae: "Taeguk i chang (2° poomsae)", img: "/images/yellow-belt.jpg" },
-    { name: "Naranja", poomsae: "Taeguk sam chang (3° poomsae)", img: "/images/orange-belt.jpg" },
-    { name: "Verde", poomsae: "Taeguk sa chang (4° poomsae)", img: "/images/green-belt.jpg" },
-    { name: "Azul", poomsae: "Taeguk oh chang (5° poomsae)", img: "/images/blue-belt.jpg" },
-    { name: "Purpura", poomsae: "Taeguk yuk chang (6° poomsae)", img: "/images/purple-belt.jpg" },
-    { name: "Rojo", poomsae: "Taeguk chil chang (7° poomsae)", img: "/images/red-belt.jpg" },
-    { name: "Rojo-Marrón", poomsae: "Taeguk pal chang (8° poomsae)", img: "/images/red-brown-belt.jpg" },
-    { name: "Marrón", poomsae: "Poomsae Koryo", img: "/images/brown-belt.jpg" },
-    { name: "Marrón-Negro", poomsae: "Poomsae Keumgang", img: "/images/brown-black-belt.jpg" },
-    { name: "Negro", poomsae: "Poomsae Taebaek", img: "/images/black-belt.jpg" },
-  ];
-  
+export const beltsData = [
+  {
+    name: "Blanco",
+    color: ["#FFFFFF", "#fff"],
+    poomsae: "Taeguk Il Chang (1° poomsae)",
+    // image: "",
+    sections: [
+      { title: "Figuras sin armas", content: ["Joong Do Il Dan"] },
+      { title: "Básicos sin armas", content: ["Básico de cuadrado 1", "Básico de respiración 1-1"] },
+      { title: "Básicos con armas", content: ["10 Nunchakus"] },
+      { title: "Llaves", content: ["15 básicas"] },
+    ],
+  },
+  {
+    name: "Amarillo",
+    color: ["#FFD700", "#FFD700"],
+    poomsae: "Taeguk Yi Chang (2° poomsae)",
+    sections: [
+      { title: "POSICIONES", content: ["Chariot Sogui", "ChuChum Sogui"] },
+      { title: "DEFENSAS", content: ["Are Maki", "Olgul Maki"] },
+      { title: "PATADAS", content: ["Dollio Chagui", "Ap Olgui"] },
+    ],
+  },
+  // Agrega más grados aquí...
+  {
+    name: "Naranja",
+    color: ["#FFA500", "#FFA500"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Verde",
+    color: ["#0b6730", "#0b6730"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Azul",
+    color: ["#0000FF", "#0000FF"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Púrpura",
+    color: ["#613d97", "#613d97"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Rojo",
+    color: ["#FF0000", "#FF0000"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Rojo-Marrón",
+    color: ["#8B4513", "#FF0000"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Marrón",
+    color: ["#8B4513", "#8B4513"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Marrón-Negro",
+    color: ["#8B4513", "#000000"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  },
+  {
+    name: "Negro",
+    color: ["#000", "#000"],
+    poomsae: "",
+    sections: [
+      { title: "", content: [] },
+      { title: "", content: [] },
+      { title: "", content: [] },
+    ],
+  }
+];

@@ -1,33 +1,64 @@
 .belt-container {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 800px;
-    margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .belt-tabs {
-    display: flex;
-    overflow-x: auto;
-    gap: 5px;
-    padding-bottom: 10px;
-  }
-  
-  .belt-tab {
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background: #e0e0e0;
-    transition: 0.3s;
-  }
-  
-  .belt-tab.active {
-    background: #1e40af;
-    color: white;
-    border-bottom: 4px solid #1e40af;
-  }
-  
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 95%;
+  height: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles of menu */
+.belt-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: none;
+  padding-bottom: 10px;
+}
+
+.belt-tab {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.belt-tab:hover {
+  transform: scale(1.05);
+}
+
+/* Styles of content */
+.belt-details {
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.belt-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.belt-image {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.belt-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.belt-section h3 {
+  width: 80%;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}

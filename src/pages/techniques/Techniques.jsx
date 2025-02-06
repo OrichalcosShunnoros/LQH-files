@@ -5,7 +5,13 @@ export const Techniques = () => {
   return (
     <div>
       <h2>{category.replace("-", " ")}</h2>
-      <p>Details about {category}...</p>
+            { 
+              category === 'theory' ? 'Theory in progress...' :
+              category === 'grades' ? 'Grades in progress...' : 
+              category === "exam" ? 'exa' : 
+              category === 'regulation' ? 'Regulation in progress...' :
+              ''
+            }
     </div>
   );
 };
