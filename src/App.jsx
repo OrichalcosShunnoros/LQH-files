@@ -1,12 +1,13 @@
+import { BrowserRouter } from "react-router-dom"
 import { Aside } from "./Layouts/Aside/Aside"
 import { Main } from "./Layouts/Main/Main"
 import './App.css'
 
 export const App = () => {
   return (
-    <div className="App">
+    <BrowserRouter className="App">
       <Aside />
       <Main />
-    </div>
+    </BrowserRouter>
   )
 }
