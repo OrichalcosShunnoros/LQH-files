@@ -3,11 +3,11 @@ import { NavItemList } from "../NavItemList/NavItemList";
 export const Navbar = () => {
   return (
     <nav>
-      <NavItemList basePath="/theory" items={["Theory", "Grades", "Exam", "Regulation"]} />
+      <NavItemList basePath="/first" items={["Theory", "Grades", "Exam", "Regulation"]} />
       <hr />
-      <NavItemList basePath="/techniques" items={["Positions", "Blows", "Locks", "Kicks", "Displacements", "Gymnastics"]} />
+      <NavItemList basePath="/second" items={["Positions", "Blows", "Locks", "Kicks", "Displacements", "Gymnastics"]} />
       <hr />
-      <NavItemList basePath="/movements" items={["Movements without weapons", "Movements with weapons", "Figures without weapons", "Figures With weapons", "Techniques"]} />
+      <NavItemList basePath="/third" items={["Movements without weapons", "Movements with weapons", "Figures without weapons", "Figures With weapons", "Techniques"]} />
     </nav>
   );
 };

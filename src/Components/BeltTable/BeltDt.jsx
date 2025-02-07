@@ -5,7 +5,7 @@ export const beltData = [
         rango: "Blanco", 
         significado: `Semilla recién sembrada que se empieza a nutrir para 
         desarrollarse, el estudiante que no tiene conocimiento del HAP-KI
-        DO, pero inicia la jornada. El blanco expresa toda su inocencia, 
+        DO, pero inicia la jornada.\nEl blanco expresa toda su inocencia, 
         vació, no-acción, y el color de papel que nadie ha escrito. `
     },
     {

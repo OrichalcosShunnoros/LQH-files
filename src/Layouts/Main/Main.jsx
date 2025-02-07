@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { Dashboard } from "./../../pages/dashboard/Dashboard";
-import { Theory } from "./../../pages/theory/Theory";
-import { Techniques } from "./../../pages/techniques/Techniques";
-import { Movements } from "./../../pages/movements/Movements";
+import { First } from "../../pages/first/First";
+// import { Second } from "../../pages/second/Second";
+// import { Third } from "../../pages/third/Third";
 import "./Main.css";
 
 export const Main = () => {
@@ -10,9 +10,9 @@ export const Main = () => {
     <main className="content">
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/theory/:category" element={<Theory />} />
-          <Route path="/techniques/:category" element={<Techniques />} />
-          <Route path="/movements/:category" element={<Movements />} />
+          <Route path="/first/:category" element={<First />} />
+          {/* <Route path="/second/:category" element={<Second />} /> */}
+          {/* <Route path="/third/:category" element={<Third />} /> */}
         </Routes>
     </main>
   )

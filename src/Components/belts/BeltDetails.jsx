@@ -12,7 +12,7 @@ export const BeltDetails = ({ selectedBelt }) => {
       <div className="belt-header">
         {/* <img src={belt.image} alt={belt.name} className="belt-image" /> */}
         <div>
-          <h2>{belt.name} - POOMSAE</h2>
+          <h2>{belt.name}</h2>
           <p>{belt.poomsae}</p>
         </div>
       </div>
