@@ -7,7 +7,7 @@ export const Navbar = () => {
       <hr />
       <NavItemList basePath="/second" items={["Positions", "Blows", "Locks", "Kicks", "Displacements", "Gymnastics"]} />
       <hr />
-      <NavItemList basePath="/third" items={["Movements without weapons", "Movements with weapons", "Figures without weapons", "Figures With weapons", "Techniques"]} />
+      <NavItemList basePath="/third" items={["moves-without-weapons", "moves-with-weapons", "figures-without-weapons", "figures-with-weapons", "techniques"]} />
     </nav>
   );
 };
