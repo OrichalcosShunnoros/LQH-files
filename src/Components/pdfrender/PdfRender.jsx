@@ -58,7 +58,15 @@ export const PDFRenderer = ({ name, content }) => {
 
   return (
     <div 
-      style={{ display: 'flex', flexDirection: 'row', alignItems: 'start', backgroundColor: '#333', border: 'none', justifyContent: 'space-between', padding: '0 .5rem' }}
+      style={{ 
+        display: 'flex', 
+        flexDirection: 'row', 
+        alignItems: 'start', 
+        backgroundColor: '#333', 
+        border: 'none', 
+        justifyContent: 'space-between', 
+        padding: '0 .5rem'
+      }}
     >
       <img src={imageSrc} alt="" width={"20%"} />
       <PDFViewer width="76%" height="500px">{MyDocument}</PDFViewer>

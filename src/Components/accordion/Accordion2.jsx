@@ -1,18 +1,14 @@
 import { useState, useEffect } from 'react';
-import { PDFRenderer } from '../../Components/pdfrender/PdfRender';
+import { PDFRenderer } from '../pdfrender/PdfRender';
 
-export const Accordion = () => {
+export const Accordion2 = () => {
   const [files, setFiles] = useState([]);
   const [openFile, setOpenFile] = useState(null);
   const [content, setContent] = useState('');
 
   useEffect(() => {
     setFiles([
-        'Historia.txt', 
-        'GM-Choi-Yon-Sul.txt', 
-        'GM-Ji-Han-Jae.txt',
-        'GM-Young-Seok-Kim.txt',
-        'GM-Salvador.txt'
+        'ISHF Reglamento de combate deportivo.pdf'
     ]);
   }, []);
 
@@ -52,9 +48,9 @@ export const Accordion = () => {
               fontWeight: 'bold',
             }}
           >
-            {file.replace('.txt', '')}
+            {file.replace('.txt || .pdf', '')}
           </button>
-          {openFile === file && <PDFRenderer name={file.replace('.txt', '')} content={content} />}
+          {openFile === file && <PDFRenderer name={file.replace('.txt || .pdf', '')} content={content} />}
         </div>
       ))}
     </div>
