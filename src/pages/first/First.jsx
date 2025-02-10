@@ -15,7 +15,7 @@ export const First = () => {
       validCategories.includes(category) && category === validCategories[0] ? <Concepts /> : 
       validCategories.includes(category) && category === validCategories[1] ? <BeltTable /> : 
       validCategories.includes(category) && category === validCategories[2] ? <BeltInfo /> : 
-      validCategories.includes(category) && category === validCategories[3] ? <Loader category={category} /> : 
+      validCategories.includes(category) && category === validCategories[3] ? <Loader /> : 
       <PageNotFound />
       }
     </div>

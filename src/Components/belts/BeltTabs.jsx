@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { beltsData } from "./beltData";
+import { beltData } from "./../BeltTable/BeltDt";
 import "./BeltInfo.css";
 
 
@@ -16,7 +16,7 @@ const getTextColor = (hexColor) => {
 export const BeltTabs = ({ selectedBelt, setSelectedBelt }) => {
   return (
     <div className="belt-tabs">
-      {beltsData.map((belt) => {
+      {beltData.map((belt) => {
         const primaryColor = belt.color[0];
         const secondaryColor = belt.color[1] || primaryColor;
 

@@ -1,19 +1,17 @@
 import PropTypes from "prop-types";
-import { beltsData } from "./beltData";
+import { beltData } from "./../BeltTable/BeltDt";
 import "./BeltInfo.css";
 
 export const BeltDetails = ({ selectedBelt }) => {
-  const belt = beltsData.find((b) => b.name === selectedBelt);
+  const belt = beltData.find((b) => b.name === selectedBelt);
 
   if (!belt) return <p>No se encontró información.</p>;
 
   return (
     <div className="belt-details">
       <div className="belt-header">
-        {/* <img src={belt.image} alt={belt.name} className="belt-image" /> */}
         <div>
           <h2>{belt.name}</h2>
-          <p>{belt.poomsae}</p>
         </div>
       </div>
       <div className="belt-sections">
