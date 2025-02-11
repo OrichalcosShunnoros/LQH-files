@@ -7,20 +7,32 @@ export const Accordion = () => {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    setFiles([
-      'Historia.txt',
-      'GM-Choi-Yon-Sul.txt',
-      'GM-Ji-Han-Jae.txt',
-      'GM-Young-Seok-Kim.txt',
-      'GM-Salvador.txt',
-    ]);
+    const fetchFiles = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/files");
+  
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+  
+        const data = await response.json();
+        console.log("Files received:", data); // Depuración
+        setFiles(data);
+      } catch (error) {
+        console.error("Error fetching files:", error);
+      }
+    };
+  
+    fetchFiles();
   }, []);
 
   const fetchFileContent = async (file) => {
     try {
-      const response = await fetch(`/docs/${file}`);
+      const response = await fetch(`http://localhost:3000/api/file/${file}`);
+
       if (!response.ok) {
         throw new Error(`Failed to load file: ${file}`);
+
       }
       return await response.text();
     } catch (error) {
@@ -60,7 +72,7 @@ export const Accordion = () => {
             {file.replace('.txt', '')}
           </button>
           {openFile === file && (
-            <PDFRenderer name={file.replace('.txt', '')} content={content} />
+            <PDFRenderer name={file.replace(/\.(txt|json)$/, '')} content={content} />
           )}
         </div>
       ))}
