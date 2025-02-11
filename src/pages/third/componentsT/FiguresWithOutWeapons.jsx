@@ -18,6 +18,7 @@ export const FiguresWithOutWeapons = () => {
       'Won Sam Dan.txt',
       'Won Sa Dan.txt',
       'Won O Dan.txt',
+      'Ki Hap.txt',
     ]);
   }, []);
 

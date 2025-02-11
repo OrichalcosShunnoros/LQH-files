@@ -1,0 +1,10 @@
+
+1.	3 veces 3 (básica), 3 veces 15 (básica).
+2.	Doble 8 simultaneo, desde abajo 7, 27
+3.	3 veces 5 por lado y lado intercalados
+4.	3 veces ‘’X’’ hacia adelante y 3 veces hacia atrás
+5.	Avanza derecho en Ap Kubi al frente y ejecuta 15, 13
+6.	Recoge y desplaza Ap Kubi a la izquierda, y vuelve a ejecutar 15, 13
+7.	Recoge y repite el paso 5.
+8.	Recoge y abre en Ap Kubi con la pierna izquierda al frente hacia la derecha y ejecuta 15, 13
+9.	Recoge y ejecuta el paso 5 con la pierna izquierda al frente en Ap Kubi.
