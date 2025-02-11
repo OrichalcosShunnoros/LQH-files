@@ -13,6 +13,11 @@ export const FiguresWithOutWeapons = () => {
       'Joong Do Sam Dan.txt',
       'Joong Do Sa Dan.txt',
       'Joong Do O Dan.txt',
+      'Won Il Dan.txt',
+      'Won I Dan.txt',
+      'Won Sam Dan.txt',
+      'Won Sa Dan.txt',
+      'Won O Dan.txt',
     ]);
   }, []);
 
