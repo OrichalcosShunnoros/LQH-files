@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom";
-import { PageNotFound } from "../404/PageNotFound";
+import { Displacements } from './componentsS/Displacements';
+import { Gymnastics } from "./componentsS/Gymnastics";
 import { Positions } from './componentsS/Positions';
+import { PageNotFound } from "../404/PageNotFound";
+import { useParams } from "react-router-dom";
 import { Blows } from './componentsS/Blows';
 import { Locks } from './componentsS/Locks';
 import { Kicks } from './componentsS/Kicks';
-import { Displacements } from './componentsS/Displacements';
-import { Gymnastics } from "./componentsS/Gymnastics";
 
 export const Second = () => {
   const { category } = useParams();

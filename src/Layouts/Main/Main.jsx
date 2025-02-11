@@ -1,9 +1,9 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
 import { Dashboard } from "../../pages/dashboard/Dashboard";
-import { First } from "../../pages/first/First";
 import { Second } from "../../pages/second/Second";
+import { First } from "../../pages/first/First";
 import { Third } from "../../pages/third/Third";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./Main.css";
 

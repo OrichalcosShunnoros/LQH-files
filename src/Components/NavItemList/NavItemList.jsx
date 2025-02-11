@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 import "./NavItemList.css";
 
 export const NavItemList = ({ items, basePath, selectedItem, onSelect }) => {

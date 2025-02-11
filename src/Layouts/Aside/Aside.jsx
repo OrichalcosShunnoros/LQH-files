@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { Navbar } from "../../Components/Navbar/Navbar";
-import { HeadNav } from "../../Components/HeadNav/HeadNav";
 import { Configure } from "../../Components/Configure/Configure";
-import { PropTypes } from 'prop-types';
 import { Dashboard } from '../../pages/dashboard/Dashboard';
+import { HeadNav } from "../../Components/HeadNav/HeadNav";
+import { Navbar } from "../../Components/Navbar/Navbar";
+import { PropTypes } from 'prop-types';
+import { useState } from "react";
 import "./Aside.css";
 
 export const Aside = ({ onToggle }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [showDashboard, setShowDashboard] = useState(false); // Estado del modal
+  const [showDashboard, setShowDashboard] = useState(false);
 
   const handleToggle = () => {
     setIsCollapsed(!isCollapsed);
@@ -75,10 +75,9 @@ export const Aside = ({ onToggle }) => {
 
         <HeadNav />
         <Navbar />
-        <Configure onShowDashboard={setShowDashboard} /> {/* Pasamos la función */}
+        <Configure onShowDashboard={setShowDashboard} /> 
       </aside>
 
-      {/* Modal fuera del aside para que siempre se muestre */}
       {showDashboard && (
         <div className="modal-overlay" onClick={() => setShowDashboard(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>

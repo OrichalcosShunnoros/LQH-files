@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { NavItemList } from "../NavItemList/NavItemList";
+import { useState } from "react";
 
 export const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState(null);

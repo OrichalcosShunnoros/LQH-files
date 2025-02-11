@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
-import { useState } from "react";
 import { Aside } from "./Layouts/Aside/Aside";
 import { Main } from "./Layouts/Main/Main";
+import { useState } from "react";
 import './App.css';
 
 export const App = () => {
