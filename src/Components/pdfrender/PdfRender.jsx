@@ -1,75 +1,39 @@
 import PropTypes from 'prop-types';
-import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { PDFViewer } from '@react-pdf/renderer';
+import { PDFGenerator } from '../pdfGenerator/PDFGenerator';
 import historia from '../../assets/historia.webp';
 import choi from '../../assets/choi.webp';
-import Ji from '../../assets/Ji-Han-Jae.webp';
-import kim from '../../assets/young-seok-kim.png';
+import jiHanJae from '../../assets/Ji-Han-Jae.webp';
+import youngSeokKim from '../../assets/young-seok-kim.png';
 import salvador from '../../assets/salvador.png';
 
-
-const styles = StyleSheet.create({
-  page: {
-    padding: 30,
-    fontSize: 12,
-    lineHeight: 1.5,
-    fontFamily: 'Helvetica',
-    backgroundColor: '#aaa',
-  },
-  title: {
-    fontSize: 18,
-    marginBottom: 10,
-    fontWeight: 'bold',
-  },
-  text: {
-    textAlign: 'justify',
-    color: '#222',
-  },
-});
+const imageMap = {
+  Historia: historia,
+  'GM-Choi-Yon-Sul': choi,
+  'GM-Ji-Han-Jae': jiHanJae,
+  'GM-Young-Seok-Kim': youngSeokKim,
+  'GM-Salvador': salvador,
+};
 
 export const PDFRenderer = ({ name, content }) => {
-  let imageSrc = '';
-
-  if (name.toLowerCase().includes('historia')) {
-    imageSrc = historia;
-  } else if (name.toLowerCase().includes('choi')) {
-    imageSrc = choi;
-  } else if (name.toLowerCase().includes('ji')) {
-    imageSrc = Ji;
-  } else if (name.toLowerCase().includes('kim')) {
-    imageSrc = kim;
-  } else if (name.toLowerCase().includes('salvador')) {
-    imageSrc = salvador;
-  }
-
-  const MyDocument = (
-    <Document>
-      <Page style={styles.page}>
-        <View>
-          <Text style={styles.title}>{name}</Text>
-          {content.split('\n').map((line, index) => (
-            <Text key={index} style={styles.text}>
-              {line}
-            </Text>
-          ))}
-        </View>
-      </Page>
-    </Document>
-  );
+  const imageSrc = imageMap[name] || '';
 
   return (
-    <div 
-      style={{ 
-        display: 'flex', 
-        flexDirection: 'row', 
-        alignItems: 'start', 
-        backgroundColor: '#333', 
-        border: 'none', 
-        justifyContent: 'space-between', 
-        padding: '0 .5rem'
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'start',
+        backgroundColor: '#333',
+        border: 'none',
+        justifyContent: 'space-between',
+        padding: '0 .5rem',
       }}
     >
-      <img src={imageSrc} alt="" width={"20%"} />
-      <PDFViewer width="76%" height="500px">{MyDocument}</PDFViewer>
+      {imageSrc && <img src={imageSrc} alt={name} width="20%" />}
+      <PDFViewer width="100%" height="500px">
+        <PDFGenerator title={name} content={content} />
+      </PDFViewer>
     </div>
   );
 };

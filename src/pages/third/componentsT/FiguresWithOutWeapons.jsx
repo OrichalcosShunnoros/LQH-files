@@ -1,33 +1,20 @@
 import { useState, useEffect } from 'react';
-import { PDFRenderer } from '../pdfrender/PdfRender';
+import { PDFRenderer } from '../../../Components/pdfrender/PdfRender';
 
-export const Accordion = () => {
+export const FiguresWithOutWeapons = () => {
   const [files, setFiles] = useState([]);
   const [openFile, setOpenFile] = useState(null);
   const [content, setContent] = useState('');
 
   useEffect(() => {
     setFiles([
-      'Historia.txt',
-      'GM-Choi-Yon-Sul.txt',
-      'GM-Ji-Han-Jae.txt',
-      'GM-Young-Seok-Kim.txt',
-      'GM-Salvador.txt',
+      'Joong Do Il Dan.txt',
+      'Joong Do I Dan.txt',
+      'Joong Do Sam Dan.txt',
+      'Joong Do Sa Dan.txt',
+      'Joong Do O Dan.txt',
     ]);
   }, []);
-
-  const fetchFileContent = async (file) => {
-    try {
-      const response = await fetch(`/docs/${file}`);
-      if (!response.ok) {
-        throw new Error(`Failed to load file: ${file}`);
-      }
-      return await response.text();
-    } catch (error) {
-      console.error(`Error loading ${file}:`, error);
-      return '';
-    }
-  };
 
   const toggleFile = async (file) => {
     if (openFile === file) {
@@ -35,13 +22,22 @@ export const Accordion = () => {
       return;
     }
 
-    const text = await fetchFileContent(file);
-    setOpenFile(file);
-    setContent(text);
+    try {
+      const response = await fetch(`/docs/${file}`);
+      if (!response.ok) {
+        throw new Error(`Failed to load file: ${file}`);
+      }
+      const text = await response.text();
+      setOpenFile(file);
+      setContent(text);
+    } catch (error) {
+      console.error(`Error loading ${file}:`, error);
+    }
   };
 
   return (
     <div>
+      <h1 style={{ textAlign: 'center', textShadow: 'none', color: '#ccc' }}>Figures With Out Weapons</h1>
       {files.map((file) => (
         <div key={file} style={{ marginBottom: '10px', borderRadius: '5px' }}>
           <button
@@ -59,9 +55,7 @@ export const Accordion = () => {
           >
             {file.replace('.txt', '')}
           </button>
-          {openFile === file && (
-            <PDFRenderer name={file.replace('.txt', '')} content={content} />
-          )}
+          {openFile === file && <PDFRenderer name={file.replace('.txt', '')} content={content} />}
         </div>
       ))}
     </div>
