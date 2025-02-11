@@ -37,7 +37,7 @@ export const MovesWithOutWeapons = () => {
   return (
     <div>
       <h1 style={{ textAlign: 'center', textShadow: 'none', color: '#ccc' }}>
-        Moves Without Weapons
+        Básicos sin armas (Gibom)
       </h1>
       {files.map((file) => (
         <div key={file} style={{ marginBottom: '10px', borderRadius: '5px' }}>

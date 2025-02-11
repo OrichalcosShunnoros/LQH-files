@@ -36,7 +36,7 @@ export const MovesWithWeapons = () => {
   return (
     <div>
       <h1 style={{ textAlign: 'center', textShadow: 'none', color: '#ccc' }}>
-        Figures Without Weapons
+        Básicos con Armas (Mugi Gibom)
       </h1>
       {files.map((file) => (
         <div key={file} style={{ marginBottom: '10px', borderRadius: '5px' }}>

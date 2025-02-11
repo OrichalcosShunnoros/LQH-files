@@ -8,7 +8,16 @@ export const Techniques = () => {
 
   useEffect(() => {
     setFiles([
-
+      '(Blanco - Amarillo - Naranja) Llaves mano igual 1 - 46.txt',
+      '(Verde) Puño contra puño.txt',
+      '(Verde) Agarres por la espalda.txt',
+      '(Azul) Patada contra puño.txt',
+      '(Azul) Abrazos.txt',
+      '(Purpura) Sentado.txt',
+      '(Rojo) Agarres a dos manos.txt',
+      '(Rojo-Marrón) Saludo y conducción (Kyonye Sul).txt',
+      '(Rojo-Marrón) LLave contra puño (Ko Ki Sul Bang Kwong Sul).txt',
+      '(Marrón) Defensa contra agrres de Judo (Judo Chapki Sul).txt'
     ]);
   }, []);
 
@@ -34,7 +43,7 @@ export const Techniques = () => {
   return (
     <div>
       <h1 style={{ textAlign: 'center', textShadow: 'none', color: '#ccc' }}>
-        Figures Without Weapons
+        Técnicas de defensa personal (Ho Sin Sul)
       </h1>
       {files.map((file) => (
         <div key={file} style={{ marginBottom: '10px', borderRadius: '5px' }}>
