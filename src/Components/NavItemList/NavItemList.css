@@ -1,15 +1,12 @@
 ul {
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    padding: .5rem;
 }
 
 li {
     list-style: none;
-    margin: 0 0.3rem;
-    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 li a {
@@ -21,15 +18,29 @@ li a {
     width: 100%;
 }
 
-li a:focus {
+/* li a.active {
     background: #333;
     color: #aaa;
     font-size: 1.2rem;
+    transform: translateX(15px);
+    font-weight: bolder;
+    padding-left: 1rem;
+} */
+
+li a:hover {
+    cursor: pointer;
+    background: none;
 }
 
-li a:not(:focus):hover {
-    cursor: pointer;
-    transform: translateX(15px) scale(1.1);
-    background: none;
-    font-weight: bolder;
+li a:not(:active):hover {
+    background: #333;
+    color: #ccc;
 }
+
+li a.active {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    transform: translateX(10px);
+  }
+  

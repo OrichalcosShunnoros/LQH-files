@@ -1,10 +1,23 @@
 import settings from '../../assets/settings.svg';
+import { PropTypes } from 'prop-types'
 import './Configure.css';
 
-export const Configure = () => {
+export const Configure = ({ onShowDashboard }) => {
   return (
     <div className="configure">
-        <a href="#"><img src={settings} alt="" title='settings'/></a>
+      <img 
+        src={settings} 
+        alt="settings" 
+        title="settings" 
+        onClick={(e) => {
+          e.preventDefault();
+          onShowDashboard(true);
+        }}
+      />
     </div>
-  )
+  );
+};
+
+Configure.propTypes = {
+  onShowDashboard: PropTypes.func.isRequired
 }
