@@ -43,7 +43,9 @@ export const FiguresWithOutWeapons = () => {
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center', textShadow: 'none', color: '#ccc' }}>Figures With Out Weapons</h1>
+      <h1 style={{ textAlign: 'center', textShadow: 'none', color: '#ccc' }}>
+        Figures Without Weapons
+      </h1>
       {files.map((file) => (
         <div key={file} style={{ marginBottom: '10px', borderRadius: '5px' }}>
           <button

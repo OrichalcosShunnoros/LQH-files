@@ -1,0 +1,39 @@
+
+ROJO
+
+1.	1 (sim)
+2.	2 (sim)
+3.	3 (sim)
+4.	Hombro, axila (sim)
+5.	4 trocada.
+6.	6 (sim)
+7.	7 desde abajo.
+8.	7, 15 desde axilas (sim)
+9.	7, 15, 13 (sim)
+10.	11 (sim)
+
+ROJO MARRÓN
+
+11.	13 (sim)
+12.	15 (sim)
+13.	17 (sim)
+14.	5 (alt)
+15.	8 (alt)
+16.	9 (alt) vuelta adentro afuera y arriba.
+17.	Medio 24 (alt)
+18.	25 (alt)
+19.	10 (alt)
+20.	5 (sim)
+
+MARRÓN
+
+21.	8 (sim)
+22.	9 (sim)
+23.	10 (sim)
+24.	24 (sim)
+25.	25 (sim)
+26.	X adelante (sim)
+27.	X atrás (sim)
+28.	26 (sim)
+29.	27 (sim)
+30.	Disociado (17/15)
