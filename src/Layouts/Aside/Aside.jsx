@@ -21,16 +21,19 @@ export const Aside = ({ onToggle }) => {
         <button 
           onClick={handleToggle}
           style={{
-            position: "absolute",
             top: "2px",
             left: "10px",
-            background: "transparent",
+            position: "absolute",
+            
             color: "#ccc",
-            fontWeight: "bolder",
+            background: "transparent",
             border: "none",
-            fontSize: "2.5rem",
-            cursor: "pointer",
             borderRadius: "5px",
+            
+            fontWeight: "bolder",
+            fontSize: "2.5rem",
+            
+            cursor: "pointer",
             zIndex: "1000",
             transition: "transform 0.3s ease",
           }}
@@ -43,11 +46,13 @@ export const Aside = ({ onToggle }) => {
         style={{
           width: isCollapsed ? "0px" : "250px",
           height: "100vh",
+          top: "0",
+          left: "0",
+          position: "fixed",
+
           background: "#555",
           color: "#fff",
-          position: "fixed",
-          left: "0",
-          top: "0",
+          
           overflow: "hidden",
           transition: "transform 0.5s ease-in-out, width 0.5s ease-in-out",
           transform: isCollapsed ? "translateX(-100%)" : "translateX(0)",
@@ -57,16 +62,19 @@ export const Aside = ({ onToggle }) => {
         <button
           onClick={handleToggle}
           style={{
-            position: "absolute",
             top: "0",
             right: "10px",
+            position: "absolute",
+          
             background: "transparent",
             color: "#ccc",
+            border: "none",
+            borderRadius: "5px",
+            
             fontWeight: "bolder",
             fontSize: "2.5rem",
-            border: "none",
+            
             cursor: "pointer",
-            borderRadius: "5px",
             transition: "background 0.3s ease",
           }}
         >
