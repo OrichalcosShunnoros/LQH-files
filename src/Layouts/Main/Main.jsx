@@ -22,8 +22,8 @@ export const Main = ({ isCollapsed }) => {
     <main
       className={`content ${isVisible ? "fade-in" : "fade-out"}`}
       style={{
-        marginLeft: isCollapsed ? ".5rem" : "250px",
         width: isCollapsed ? "100%" : "calc(100% - 250px)",
+        marginLeft: isCollapsed ? ".5rem" : "250px",
         transition: "margin-left 0.5s ease, width 0.5s ease",
       }}
     >
