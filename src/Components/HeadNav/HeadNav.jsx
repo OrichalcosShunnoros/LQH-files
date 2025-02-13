@@ -5,7 +5,7 @@ export const HeadNav = () => {
     <div className="hn">
         {/* <img src="" alt="" /> */}
         <div className="logo"></div>
-        <h1>LQH files</h1>
+        <h1>LQH Files</h1>
     </div>
   )
 }
