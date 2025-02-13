@@ -4,29 +4,45 @@ import { useState } from "react";
 export const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
-  const handleSelect = (item) => {
-    setSelectedItem(item);
-  };
+  const handleSelect = (item) => setSelectedItem(item);
 
   return (
     <nav>
       <NavItemList 
         basePath="/first" 
-        items={["Theory", "Grades", "Exam", "Regulation"]} 
+        items={[
+          "Theory", 
+          "Grades", 
+          "Exam", 
+          "Regulation"
+        ]} 
         selectedItem={selectedItem} 
         onSelect={handleSelect} 
       />
       <hr />
       <NavItemList 
         basePath="/second" 
-        items={["Positions", "Blows", "Locks", "Kicks", "Displacements", "Gymnastics"]} 
+        items={[
+          "Positions", 
+          "Blows", 
+          "Locks", 
+          "Kicks", 
+          "Displacements", 
+          "Gymnastics"
+        ]} 
         selectedItem={selectedItem} 
         onSelect={handleSelect} 
       />
       <hr />
       <NavItemList 
         basePath="/third" 
-        items={["moves-without-weapons", "moves-with-weapons", "figures-without-weapons", "figures-with-weapons", "techniques"]} 
+        items={[
+          "moves-without-weapons", 
+          "moves-with-weapons", 
+          "figures-without-weapons", 
+          "figures-with-weapons", 
+          "techniques"
+        ]} 
         selectedItem={selectedItem} 
         onSelect={handleSelect} 
       />

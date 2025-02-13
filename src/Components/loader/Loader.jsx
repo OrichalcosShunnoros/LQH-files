@@ -1,5 +1,5 @@
-import './loader.css'
 import PropTypes from 'prop-types'
+import './loader.css'
 
 export const Loader = ({ category }) => {
   return (
