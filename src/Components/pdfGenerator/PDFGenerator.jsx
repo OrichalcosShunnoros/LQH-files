@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   page: {

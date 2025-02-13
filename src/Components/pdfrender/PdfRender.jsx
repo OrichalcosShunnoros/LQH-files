@@ -1,14 +1,14 @@
-import PropTypes from 'prop-types';
-import { PDFViewer } from '@react-pdf/renderer';
 import { PDFGenerator } from '../pdfGenerator/PDFGenerator';
-import historia from '../../assets/historia.webp';
-import choi from '../../assets/choi.webp';
-import jiHanJae from '../../assets/Ji-Han-Jae.webp';
 import youngSeokKim from '../../assets/young-seok-kim.png';
+import jiHanJae from '../../assets/Ji-Han-Jae.webp';
+import historia from '../../assets/historia.webp';
 import salvador from '../../assets/salvador.png';
+import { PDFViewer } from '@react-pdf/renderer';
+import choi from '../../assets/choi.webp';
+import PropTypes from 'prop-types';
 
 const imageMap = {
-  Historia: historia,
+  'Historia': historia,
   'GM-Choi-Yon-Sul': choi,
   'GM-Ji-Han-Jae': jiHanJae,
   'GM-Young-Seok-Kim': youngSeokKim,
@@ -21,13 +21,15 @@ export const PDFRenderer = ({ name, content }) => {
   return (
     <div
       style={{
+        padding: '0 .5rem',
+        
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'start',
-        backgroundColor: '#333',
-        border: 'none',
         justifyContent: 'space-between',
-        padding: '0 .5rem',
+        alignItems: 'start',
+
+        border: 'none',
+        backgroundColor: '#333',
       }}
     >
       {imageSrc && <img src={imageSrc} alt={name} width="20%" />}
