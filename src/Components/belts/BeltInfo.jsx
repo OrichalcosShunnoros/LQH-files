@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { BeltTabs } from "./BeltTabs";
-import { BeltDetails } from "./BeltDetails";
 import { beltData } from "./../BeltTable/BeltDt";
+import { BeltDetails } from "./BeltDetails";
+import { BeltTabs } from "./BeltTabs";
+import { useState } from "react";
 import "./BeltInfo.css";
 
 export const BeltInfo = () => {

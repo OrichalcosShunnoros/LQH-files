@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import { beltData } from "./../BeltTable/BeltDt";
+import PropTypes from "prop-types";
 import "./BeltInfo.css";
 
 
