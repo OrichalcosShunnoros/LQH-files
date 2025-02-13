@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import { PDFRenderer } from '../pdfrender/PdfRender';
+import { useState, useEffect } from 'react';
 
 export const Accordion = () => {
   const [files, setFiles] = useState([]);
@@ -16,7 +16,7 @@ export const Accordion = () => {
         }
   
         const data = await response.json();
-        console.log("Files received:", data); // Depuración
+        console.log("Files received:", data);
         setFiles(data);
       } catch (error) {
         console.error("Error fetching files:", error);
@@ -32,7 +32,6 @@ export const Accordion = () => {
 
       if (!response.ok) {
         throw new Error(`Failed to load file: ${file}`);
-
       }
       return await response.text();
     } catch (error) {
